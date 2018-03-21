@@ -1,6 +1,6 @@
-package main.opencoding.pset2.model;
+package at.refugeescode.psets_tests.pset3.model;
 
-import main.opencoding.pset2.model.move.Move;
+import at.refugeescode.psets_tests.pset3.model.move.Move;
 
 public class Result {
 

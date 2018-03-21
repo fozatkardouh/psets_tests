@@ -1,7 +1,7 @@
-package main.opencoding.pset2.controller;
+package at.refugeescode.psets_tests.pset3.controller;
 
-import main.opencoding.pset2.model.Result;
-import main.opencoding.pset2.model.move.Move;
+import at.refugeescode.psets_tests.pset3.model.Result;
+import at.refugeescode.psets_tests.pset3.model.move.Move;
 
 public class Judge {
 

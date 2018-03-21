@@ -1,11 +1,10 @@
-package main.opencoding.pset2.controller;
+package at.refugeescode.psets_tests.pset3.controller;
 
-import main.opencoding.pset2.controller.player.HumanPlayer;
-import main.opencoding.pset2.controller.player.Player;
-import main.opencoding.pset2.controller.player.Players;
-import main.opencoding.pset2.model.move.Move;
-import main.opencoding.pset2.model.Result;
-import main.opencoding.pset2.view.Host;
+import at.refugeescode.psets_tests.pset3.controller.player.Player;
+import at.refugeescode.psets_tests.pset3.controller.player.Players;
+import at.refugeescode.psets_tests.pset3.model.Result;
+import at.refugeescode.psets_tests.pset3.model.move.Move;
+import at.refugeescode.psets_tests.pset3.view.Host;
 
 import java.util.List;
 
@@ -15,13 +14,6 @@ public class RockScissorsPaperGame {
     private Judge judge = new Judge();
 
     public void play() {
-        // get players
-
-        // as long as players want to play
-        // play one round
-        // ask them if they want to play again
-
-
         host.welcome();
         List<Player> players = Players.getTwoPlayers();
         Player player1 = players.get(0);

@@ -1,4 +1,4 @@
-package main.opencoding.pset2.controller.player;
+package at.refugeescode.psets_tests.pset3.controller.player;
 
 import java.util.Arrays;
 import java.util.List;

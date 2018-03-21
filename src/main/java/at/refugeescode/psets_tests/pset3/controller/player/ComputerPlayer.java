@@ -1,7 +1,7 @@
-package main.opencoding.pset2.controller.player;
+package at.refugeescode.psets_tests.pset3.controller.player;
 
-import main.opencoding.pset2.model.move.Move;
-import main.opencoding.pset2.model.move.Moves;
+import at.refugeescode.psets_tests.pset3.model.move.Move;
+import at.refugeescode.psets_tests.pset3.model.move.Moves;
 
 import java.util.List;
 import java.util.Random;

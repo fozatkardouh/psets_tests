@@ -1,10 +1,11 @@
-package main.opencoding.pset2;
+package at.refugeescode.psets_tests.pset3;
 
-import main.opencoding.pset2.controller.RockScissorsPaperGame;
+import at.refugeescode.psets_tests.pset3.controller.RockScissorsPaperGame;
 
 public class RockScissorsPaperMain {
 
     public static void main(String[] args) {
         new RockScissorsPaperGame().play();
     }
+
 }
