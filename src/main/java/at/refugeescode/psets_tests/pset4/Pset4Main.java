@@ -1,22 +1,23 @@
-package main.opencoding.pset4;
+package at.refugeescode.psets_tests.pset4;
 
-import main.opencoding.pset4.controller.Airport;
-import main.opencoding.pset4.model.Luggage;
-import main.opencoding.pset4.parse.LuggageParser;
+import at.refugeescode.psets_tests.pset4.controller.Airport;
+import at.refugeescode.psets_tests.pset4.model.Luggage;
+import at.refugeescode.psets_tests.pset4.parse.LuggageParser;
 
 import java.util.List;
 
 public class Pset4Main {
 
     public static void main(String[] args) {
+        airportStarter();
+    }
+
+    public static List<Luggage> airportStarter() {
         LuggageParser luggageParser = new LuggageParser();
-        List<Luggage> departureLuggage = luggageParser.asList("src/oop/opencoding/pset4/data/luggage.csv");
+        List<Luggage> departureLuggage = luggageParser.asList("/home/fozat/Documents/Java Development/psets_tests/src/main/java/at/refugeescode/psets_tests/pset4/data/luggage.csv");
 
         Airport airport = new Airport();
-        List<Luggage> arrivalLuggage = airport.travel(departureLuggage);
-
-        // Returning the list of arrival luggage will be very useful
-        // when we learn about unit testing to be able to test the behaviour
-        // of the Airport class automatically
+        return airport.travel(departureLuggage);
     }
+
 }

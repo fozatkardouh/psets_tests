@@ -1,6 +1,6 @@
-package main.opencoding.pset4.controller.travelstage;
+package at.refugeescode.psets_tests.pset4.controller.travelstage;
 
-import main.opencoding.pset4.model.Luggage;
+import at.refugeescode.psets_tests.pset4.model.Luggage;
 
 import java.time.Duration;
 
@@ -15,4 +15,5 @@ public class DropOffStand implements TravelStage {
         luggage.setWaitingDuration(updatedDuration);
         return luggage;
     }
+
 }

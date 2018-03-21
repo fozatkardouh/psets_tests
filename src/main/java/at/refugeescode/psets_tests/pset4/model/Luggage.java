@@ -1,4 +1,4 @@
-package main.opencoding.pset4.model;
+package at.refugeescode.psets_tests.pset4.model;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

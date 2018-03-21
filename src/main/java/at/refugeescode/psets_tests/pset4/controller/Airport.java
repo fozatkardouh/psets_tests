@@ -1,8 +1,8 @@
-package main.opencoding.pset4.controller;
+package at.refugeescode.psets_tests.pset4.controller;
 
-import main.opencoding.pset4.controller.travelstage.*;
-import main.opencoding.pset4.model.Luggage;
-import main.opencoding.pset4.view.SummaryReporter;
+import at.refugeescode.psets_tests.pset4.controller.travelstage.*;
+import at.refugeescode.psets_tests.pset4.model.Luggage;
+import at.refugeescode.psets_tests.pset4.view.SummaryReporter;
 
 import java.util.List;
 import java.util.stream.Collectors;

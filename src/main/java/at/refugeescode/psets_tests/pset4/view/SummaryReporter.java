@@ -1,7 +1,7 @@
-package main.opencoding.pset4.view;
+package at.refugeescode.psets_tests.pset4.view;
 
-import main.opencoding.pset4.model.Luggage;
-import main.opencoding.pset4.util.TimeUtils;
+import at.refugeescode.psets_tests.pset4.model.Luggage;
+import at.refugeescode.psets_tests.pset4.util.TimeUtils;
 
 import java.time.Duration;
 import java.util.List;

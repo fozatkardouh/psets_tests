@@ -1,6 +1,6 @@
-package main.opencoding.pset4.controller;
+package at.refugeescode.psets_tests.pset4.controller;
 
-import main.opencoding.pset4.model.Luggage;
+import at.refugeescode.psets_tests.pset4.model.Luggage;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
