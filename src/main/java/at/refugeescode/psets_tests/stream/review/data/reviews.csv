@@ -1,0 +1,7 @@
+id;recipe;rating;feedback
+1;carbonara pasta;7.2;[{‘word’: ‘wonderful’}, {‘word’: ‘tasty’}]
+2;pasta bolognese;6.4;[{‘word’: ‘tasty’}, {‘word’: ‘good’}]
+3;apple cake;8.1;[{‘word’: ‘traditional’}, {‘word’: ‘sweet’}, {‘word’: ‘warm’}]
+4;hummus;8.9;[{‘word’: ‘wonderful’}, {‘word’: ‘salty’}]
+5;japanese noodles;6.2;[{‘word’: ‘traditional’}, {‘word’: ‘soup’}, {‘word’: ‘warm’}]
+6;ice cream;6;[{‘word’: ‘summer’}, {‘word’: ‘sweet’}, {‘word’: ‘cold’}]
