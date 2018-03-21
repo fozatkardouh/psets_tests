@@ -1,21 +1,23 @@
-package main.opencoding.pset1;
+package at.refugeescode.psets_tests.pset1;
 
-import main.opencoding.pset1.controller.MovieDatabaseSummarizer;
-import main.opencoding.pset1.model.Summary;
-import main.opencoding.pset1.view.SummaryDisplayer;
+import at.refugeescode.psets_tests.pset1.controller.MovieDatabaseSummarizer;
+import at.refugeescode.psets_tests.pset1.model.Summary;
+import at.refugeescode.psets_tests.pset1.view.SummaryDisplayer;
 
 public class Pset1Main {
 
     public static void main(String[] args) {
-        MovieDatabaseSummarizer summarizer = new MovieDatabaseSummarizer();
         SummaryDisplayer displayer = new SummaryDisplayer();
-
-        // this part is going to do the logic
-        // the result will be stored in the summary
-        Summary summary = summarizer.summarize();
-
+        Summary summary = summarizer();
         // this part will only display the stuff
         displayer.display(summary);
+    }
+
+    public static Summary summarizer() {
+        MovieDatabaseSummarizer summarizer = new MovieDatabaseSummarizer();
+        // this part is going to do the logic
+        // the result will be stored in the summary
+        return summarizer.summarize();
     }
 
 }

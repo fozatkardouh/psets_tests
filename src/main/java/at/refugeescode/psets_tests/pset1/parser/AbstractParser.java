@@ -1,4 +1,4 @@
-package main.opencoding.pset1.parser;
+package at.refugeescode.psets_tests.pset1.parser;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,11 +1,11 @@
-package main.opencoding.pset1.controller;
+package at.refugeescode.psets_tests.pset1.controller;
 
-import main.opencoding.pset1.model.Actor;
-import main.opencoding.pset1.model.Gender;
-import main.opencoding.pset1.model.Movie;
-import main.opencoding.pset1.model.Summary;
-import main.opencoding.pset1.parser.ActorParser;
-import main.opencoding.pset1.parser.MovieParser;
+import at.refugeescode.psets_tests.pset1.model.Actor;
+import at.refugeescode.psets_tests.pset1.model.Gender;
+import at.refugeescode.psets_tests.pset1.model.Movie;
+import at.refugeescode.psets_tests.pset1.model.Summary;
+import at.refugeescode.psets_tests.pset1.parser.ActorParser;
+import at.refugeescode.psets_tests.pset1.parser.MovieParser;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -19,8 +19,8 @@ public class MovieDatabaseSummarizer {
         MovieParser movieParser = new MovieParser();
         ActorParser actorParser = new ActorParser();
 
-        List<Movie> movies = movieParser.asList("src/main/opencoding/pset1/data/movies.csv");
-        List<Actor> actors = actorParser.asList("src/main/opencoding/pset1/data/actors.csv");
+        List<Movie> movies = movieParser.asList("/home/fozat/Documents/Java Development/psets_tests/src/main/java/at/refugeescode/psets_tests/pset1/data/movies.csv");
+        List<Actor> actors = actorParser.asList("/home/fozat/Documents/Java Development/psets_tests/src/main/java/at/refugeescode/psets_tests/pset1/data/actors.csv");
 
         Summary summary = new Summary();
         summary.setNumberOfMovies(movies.size());
