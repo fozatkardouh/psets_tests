@@ -8,6 +8,8 @@ import java.util.List;
 
 public class Pset4Main {
 
+    private static Airport airport = new Airport();
+
     public static void main(String[] args) {
         airportStarter();
     }
@@ -16,8 +18,11 @@ public class Pset4Main {
         LuggageParser luggageParser = new LuggageParser();
         List<Luggage> departureLuggage = luggageParser.asList("/home/fozat/Documents/Java Development/psets_tests/src/main/java/at/refugeescode/psets_tests/pset4/data/luggage.csv");
 
-        Airport airport = new Airport();
         return airport.travel(departureLuggage);
+    }
+
+    public static List<Luggage> getRejectedLuggage() {
+        return airport.getRejectedLuggage();
     }
 
 }
