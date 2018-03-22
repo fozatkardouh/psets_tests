@@ -2,6 +2,7 @@ package at.refugeescode.psets_tests.pset3.controller;
 
 import at.refugeescode.psets_tests.pset3.model.Result;
 import at.refugeescode.psets_tests.pset3.model.move.Move;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mockito;
@@ -16,8 +17,14 @@ import static org.junit.Assert.assertThat;
 class JudgeTest {
 
     private Judge judge = new Judge();
-    private Move move1 = Mockito.mock(Move.class);
-    private Move move2 = Mockito.mock(Move.class);
+    private Move move1;
+    private Move move2;
+
+    @BeforeEach
+    public void resetAll() {
+        move1 = Mockito.mock(Move.class);
+        move2 = Mockito.mock(Move.class);
+    }
 
     @Test
     public void testMove1wins() {
