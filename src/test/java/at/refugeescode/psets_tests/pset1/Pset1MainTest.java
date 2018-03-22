@@ -6,6 +6,9 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @RunWith(SpringRunner.class)
@@ -17,42 +20,24 @@ class Pset1MainTest {
         Summary result = Pset1Main.summarizer();
         String maleFemaleRatio = "64.1 %female, 35.9 %male";
 
-        String mostAppearingGenresOne = "Drama (14495)";
-        String mostAppearingGenresTwo = "Comedy (8955)";
+        List<String> mostAppearingGenres = Arrays.asList("Drama (14495)", "Comedy (8955)");
 
-        String mostHiredActorsOne = "Bess Flowers (82)";
-        String mostHiredActorsTwo = "Christopher Lee (69)";
-        String mostHiredActorsThree = "Grey Griffin (58)";
-        String mostHiredActorsFour = "Danny Trejo (54)";
-        String mostHiredActorsFive = "Eric Roberts (52)";
+        List<String> mostHiredActors = Arrays.asList("Bess Flowers (82)", "Christopher Lee (69)"
+                , "Grey Griffin (58)", "Danny Trejo (54)", "Eric Roberts (52)");
 
-        String mostRatedMoviesOne = "Reckless (10.0)";
-        String mostRatedMoviesTwo = "Girl in the Cadillac (10.0)";
-        String mostRatedMoviesThree = "The Haunted World of Edward D. Wood, Jr. (10.0)";
-        String mostRatedMoviesFour = "Carmen Miranda: Bananas Is My Business (10.0)";
-        String mostRatedMoviesFive = "Other Voices Other Rooms (10.0)";
+        List<String> mostRatedMovies = Arrays.asList("Reckless (10.0)", "Girl in the Cadillac (10.0)"
+                , "The Haunted World of Edward D. Wood, Jr. (10.0)", "Carmen Miranda: Bananas Is My Business (10.0)"
+                , "Other Voices Other Rooms (10.0)");
 
         Integer numberOfActors = 274570;
         Integer numberOfMovies = 29947;
 
         assertEquals(maleFemaleRatio, result.getMaleFemaleRatio());
-
         assertEquals(numberOfActors, result.getNumberOfActors());
         assertEquals(numberOfMovies, result.getNumberOfMovies());
-
-        assertEquals(mostAppearingGenresOne, result.getMostAppearingGenres().get(0));
-        assertEquals(mostAppearingGenresTwo, result.getMostAppearingGenres().get(1));
-
-        assertEquals(mostHiredActorsOne, result.getMostHiredActors().get(0));
-        assertEquals(mostHiredActorsTwo, result.getMostHiredActors().get(1));
-        assertEquals(mostHiredActorsThree, result.getMostHiredActors().get(2));
-        assertEquals(mostHiredActorsFour, result.getMostHiredActors().get(3));
-        assertEquals(mostHiredActorsFive, result.getMostHiredActors().get(4));
-
-        assertEquals(mostRatedMoviesOne, result.getMostRatedMovies().get(0));
-        assertEquals(mostRatedMoviesTwo, result.getMostRatedMovies().get(1));
-        assertEquals(mostRatedMoviesThree, result.getMostRatedMovies().get(2));
-        assertEquals(mostRatedMoviesFour, result.getMostRatedMovies().get(3));
-        assertEquals(mostRatedMoviesFive, result.getMostRatedMovies().get(4));
+        assertEquals(mostAppearingGenres, result.getMostAppearingGenres());
+        assertEquals(mostHiredActors, result.getMostHiredActors());
+        assertEquals(mostRatedMovies, result.getMostRatedMovies());
     }
+
 }
